@@ -6,9 +6,13 @@
 <title>@yield('head', 'Sample App')</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="" rel="stylesheet">
+<link href="/css/app.css" rel="stylesheet">
 </head>
 <body>
-    @yield('content')
+    @include('layouts._header')
+    <div class="container">
+      @yield('content')
+      @include('layouts._footer')
+    </div>
 </body>
 </html>
